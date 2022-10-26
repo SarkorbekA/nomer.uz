@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="buy_scene">
+        <div class="reg_con">
+            <form  method="post" action="">
+                <div class="container">
+                    <div class="reg_top">
+                        <h1 class="reg_title">Регистрация</h1>
+                        <a class="reg_back" href="#">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div>
+                    <hr>
+                
+                    <label for="name"><p class="reg_sub_title">Ф.И.О</p></label>
+                    <input type="text" placeholder="Ф.И.О" name="email" id="email" required>
+                
+                    <label for="tel"><p class="reg_sub_title">Номер для связи</p></label>
+                    <input type="tel" placeholder="Введите номер телефона" name="tel" id="tel" required>
+                
+                    <label for="tel-new"><p class="reg_sub_title">Номер который хотите приобрести</p></label>
+                    <input type="tel" placeholder="+998 97 170 13 40" name="tel-tel" id="tel-tel" readonly>
+                    <hr>
+
+                    <p class="term">Создавая учетную запись, вы соглашаетесь с нашими <a href="#">Условия и конфиденциальность</a>.</p>
+                
+                    <button type="submit" class="registerbtn">Готово</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <div class="header_con">
+            <div class="header_upper">
+                <a href="#" class="logo">nomer.uz</a>
+                <div class="menu">
+                    <a href="#main">Новые номера</a>
+                    <a href="#footer_con">О нас</a>
+                </div>
+            </div>
+
+            <form class="search_bar" method="post" action="/?do=search">
+                <input class="intup_search" type="hidden" name="do" value="Поиск">
+                <input class="intup_search" type="hidden" name="subaction" value="Поиск">
+                <input class="intup_search" name="story" type="search" id="search" placeholder="Поиск...">
+                <button class="button_search" type="submit">
+                    <i class="fa fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <a href="#my_numbers" class="basket">
+                <div class="basket_btn">
+                    <img src="images/busket.png">
+                    <div class="dot">2</div>
+                </div>
+            </a>
+
+            <div class="clear"></div>
+        </div>
+        <div class="operators">
+            <div class="op_con">
+
+                <div class="ops">
+                    <a href="#">
+                        <div class="operator ucell">
+                            <img src="images/ucell.png">Ucell
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="operator beeline">
+                            <img src="images/beeline.png">Beeline
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="operator mobiuz">
+                            MobiUz
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="operator uztelecom">
+                            <img src="images/uztelecom.png">UZTELECOM
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="operator humans">
+                            Humans
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="operator perfectum">
+                            <img src="images/perfectum.png">Perfectum
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </header>
+    <main id="main">
+
+        <div id="about_number" class="about_number">
+            <div class="left_side">
+                <div class="top">
+                    <h1 class="an_title">Купить номер</h1>
+                    <a id="back" class="back" href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                
+                <div class="inf_container">
+                    <div class="info">
+                        <p class="place_holder">Мобильный оператор:</p>
+                        <a class="variable_info" href="#">
+    
+                            <!-- keragini qoyas -->
+    
+                            <!-- Ucell icon for use -->
+                            <div class="operator_about ucell">
+                                <img src="images/ucell.png">Ucell
+                            </div>
+
+                            <!-- Humans icon for use -->
+                            <!-- <div class="operator_about humans">
+                                Humans
+                            </div> -->
+    
+                            <!-- Beeline icon for use -->
+                            <!-- <div class="operator_about beeline">
+                                <img src="images/beeline.png">Beeline
+                            </div> -->
+    
+                            <!-- MobiUz icon for use -->
+                            <!-- <div class="operator_about mobiuz">
+                                MobiUz
+                            </div> -->
+    
+                            <!-- UZTELECOM icon for use -->
+                            <!-- <div class="operator_about uztelecom">
+                                <img src="images/uztelecom.png">UZTELECOM
+                            </div> -->
+    
+                            <!-- Perfectum icon for use -->
+                            <!-- <div class="operator_about perfectum">
+                                <img src="images/perfectum.png">Perfectum
+                            </div> -->
+                        </a>
+                    </div>
+                    <div class="info_bg">
+                        <p class="place_holder">Номер сим-карты:</p>
+                        <p class="variable_info">+998 97 170 13 40</p>
+                    </div>
+                    <div class="info">
+                        <p class="place_holder">Цена:</p>
+                        <p class="variable_info">0 сум</p>
+                    </div>
+                    <div class="info_bg">
+                        <p class="place_holder">Тип карты:</p>
+                        <p class="variable_info">Простой</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <a class="buy_link" href="#">
+                    <div class="buy">Купить</div>
+                </a>
+    
+                <div class="clear"></div>
+    
+                <a class="ad_link" href="#"><div class="ad" data-text="ad"></div></a>
+
+                <p class="an_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur quibusdam necessitatibus similique natus quas cumque enim possimus, ab dolore animi distinctio temporibus perferendis ipsum alias totam amet nihil officia.</p>
+            </div>
+
+            <div class="right_side">
+                <a onclick="btn()" class="an_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="an_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="an_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="an_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="an_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="an_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="an_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="an_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+
+        <div id="new_numbers" class="new_numbers" id="new_numbers">
+
+            <h1 class="nn_title">Новые номера</h1>
+
+            <div class="nn_list" id="nn_list">
+
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+                <a onclick="btn()" class="nn_link" href="#">
+                    <div class="nn_btn">
+                        <p class="nn_btn1">+998 97 170 13 40</p>
+                        <p class="nn_btn2">Простой</p>
+                        <p class="nn_btn2">0 сум</p>
+                    </div>
+                </a>
+
+            </div>
+            <p class="nn_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio nisi eum aspernatur reprehenderit consequuntur laboriosam labore esse veritatis, alias accusamus quis id quas possimus eligendi quidem soluta voluptatibus eos.</p>
+            <ul class="pagination">
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <div id="my_numbers" class="my_numbers">
+
+        <h1 class="my_title">Мои номера</h1>
+
+        <div id="my_list">
+            <a class="my_link" href="#">
+                <div class="my_btn">
+                    <p class="my_btn1">+998 97 170 13 40</p>
+                    <p class="my_btn2">В ожидании</p>
+                    <p class="my_btn3">0 сум</p>
+                </div>
+            </a>
+            <a class="my_link" href="#">
+                <div class="my_btn">
+                    <p class="my_btn1">+998 97 170 13 40</p>
+                    <p class="my_btn2">Готово</p>
+                    <p class="my_btn3">0 сум</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer_con" class="footer_con">
+
+            <div class="footer_menu">
+                <a href="#">Новые номера</a>
+                <a href="#">Мои номера</a>
+                <a href="#">О нас</a>
+            </div>
+
+            <div class="footer_menu">
+                <a href="#">Отзывы</a>
+                <a href="#">Cookie</a>
+                <a href="#">Cоглашение</a>
+                <a href="#">Политика</a>
+            </div>
+            
+
+            <div class="socials">
+                <p class="title">Соц. сети</p>
+                <div>
+                    <a class="social_net" href="#">
+                        <i title="mail" style="color: #2a3f50;" class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a class="social_net" href="#">
+                        <i title="twitter" style="color: #1d9bf0;" class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a class="social_net" href="#">
+                        <i title="linkedin" style="color: #0a66c1;" class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a class="social_net" href="#">
+                        <i title="facebook" style="color:#3c5a99;" class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a class="social_net" href="#">
+                        <i title="telegram" style="color: #2098ca;" class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
